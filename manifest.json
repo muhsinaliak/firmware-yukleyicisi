@@ -1,0 +1,12 @@
+{
+  "name": "Mintify firmware yükleme aracı",
+  "version": "2.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "merged-firmware.bin", "offset": 0 }
+      ]
+    }
+  ]
+}

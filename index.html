@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cihaz Güncelleyici</title>
+    <meta charset="UTF-8" />
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        ol { display: inline-block; text-align: left; }
+    </style>
+    <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module"></script>
+</head>
+<body>
+    <img src="https://www.espressif.com/sites/default/files/ESP-logo-1-retina.png" alt="ESP Logo" width="200">
+    <h1>Cihaz Yazılım Güncelleme Aracı</h1>
+    <p>Lütfen aşağıdaki adımları sırasıyla uygulayın:</p>
+    <ol>
+        <li>Cihazınızı USB kablosu ile bilgisayarınıza bağlayın.</li>
+        <li>Cihazınızdaki <strong>"BOOT"</strong> düğmesine basılı tutun.</li>
+        <li>Elinizi BOOT düğmesinden kaldırmadan, <strong>"RESET"</strong> düğmesine bir kez kısaca basıp bırakın.</li>
+        <li>Bir saniye sonra elinizi <strong>BOOT</strong> düğmesinden çekebilirsiniz. (Cihazınız artık yükleme modundadır)</li>
+        <li>Aşağıdaki düğmeye tıklayın ve açılan pencereden cihazınızın bağlı olduğu portu (genellikle tek seçenek çıkar) seçip "Bağlan"a tıklayın.</li>
+    </ol>
+    
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+
+</body>
+</html>
